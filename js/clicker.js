@@ -66,6 +66,23 @@ let achievements = [
         requiredClicks: 10000,
         acquired: false,
     },
+
+    {
+        description: 'Chilla lite',
+        requiredClicks: 1000000,
+        acquired: false,
+    },
+
+    {
+        description: '......',
+        requiredClicks: 1000000000,
+        acquired: false,
+    },
+    {
+        description: 'har glider kingen in',
+        requiredachivments: 5,
+        acquired: false,
+    },
 ];
 
 /* Med ett valt element, som knappen i detta fall så kan vi skapa listeners
@@ -196,6 +213,26 @@ upgrades = [
         name: 'Collaba med coca cola',
         cost: 10000,
         amount: 500,
+    },
+    {
+        name: 'Collaba med gligonandersson',
+        cost: 50000,
+        amount: 800,
+    },
+    {
+        name: 'Skapa egen merch line',
+        cost: 100000,
+        amount: 1500,
+    },
+    {
+        name: 'Ta över Monaco',
+        cost: 1000000,
+        amount: 2200,
+    },
+    {
+        name: 'Ta över puffefish06 youtube',
+        cost: 2570000,
+        amount: 253,
     },
 ];
 

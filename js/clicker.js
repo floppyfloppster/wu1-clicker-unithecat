@@ -14,7 +14,7 @@ const mpcTracker = document.querySelector('#mpc'); // money per click
 const upgradesTracker = document.querySelector('#upgrades');
 const upgradeList = document.querySelector('#upgradelist');
 const msgbox = document.querySelector('#msgbox');
-const audioAchievement = document.querySelector('#swoosh');
+const audioAchievement = document.querySelector('#meow');
 
 /* Följande variabler använder vi för att hålla reda på hur mycket pengar som
  * spelaren, har och tjänar.
@@ -37,12 +37,12 @@ let active = false; // exempel för att visa att du kan lägga till klass för a
 
 let achievements = [
     {
-        description: 'Museet är redo att öppna, grattis! ',
+        description: 'Yippie din första följare, grattis! ',
         requiredUpgrades: 1,
         acquired: false,
     },
     {
-        description: 'Nu börjar det likna något, fortsätt gräva!',
+        description: 'Nu börjar det likna något, fortsätt tiktoka!',
         requiredUpgrades: 10,
         acquired: false,
     },
@@ -52,7 +52,17 @@ let achievements = [
         acquired: false,
     },
     {
-        description: 'Tac-2 god!',
+        description: 'Uni blir as känd!',
+        requiredClicks: 100,
+        acquired: false,
+    },
+    {
+        description: 'Nya tiktok kändisen!',
+        requiredUpgrades: 50,
+        acquired: false,
+    },
+    {
+        description: 'Ez fame get good kid',
         requiredClicks: 10000,
         acquired: false,
     },
@@ -163,24 +173,29 @@ window.addEventListener('load', (event) => {
  */
 upgrades = [
     {
-        name: 'Sop',
+        name: 'Lägg upp foto',
         cost: 10,
         amount: 1,
     },
     {
-        name: 'Kvalitetsspade',
+        name: 'Lägg upp video',
         cost: 50,
         clicks: 2,
     },
     {
-        name: 'Skottkärra',
+        name: 'Gå live',
         cost: 100,
         amount: 10,
     },
     {
-        name: 'Grävmaskin',
+        name: 'Collaba med andra katter',
         cost: 1000,
         amount: 100,
+    },
+    {
+        name: 'Collaba med coca cola',
+        cost: 10000,
+        amount: 500,
     },
 ];
 
@@ -213,14 +228,14 @@ function createCard(upgrade) {
     } else {
         header.textContent = `${upgrade.name}, +${upgrade.clicks} per klick.`;
     }
-    cost.textContent = `Köp för ${upgrade.cost} benbitar.`;
+    cost.textContent = `Köp för ${upgrade.cost} följare.`;
 
     card.addEventListener('click', (e) => {
         if (money >= upgrade.cost) {
             acquiredUpgrades++;
             money -= upgrade.cost;
             upgrade.cost *= 1.5;
-            cost.textContent = 'Köp för ' + upgrade.cost + ' benbitar';
+            cost.textContent = 'Köp för ' + Math.round (upgrade.cost) + ' följare ';
             moneyPerSecond += upgrade.amount ? upgrade.amount : 0;
             moneyPerClick += upgrade.clicks ? upgrade.clicks : 0;
             message('Grattis du har köpt en uppgradering!', 'success');

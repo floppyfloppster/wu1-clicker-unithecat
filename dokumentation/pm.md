@@ -24,6 +24,7 @@ Format: ![Alt Text](url)
 Här beskriver du vad som har gått bra i ditt projekt och analyserar varför. Hur ska du upprepa framgångarna.
 Det har varit roligt och realtivt lätt att kunna fixa med det visuella. Det kommer hjälpa mig i framtiden med webbsidor mm
 
+
 ## Negativa erfarenheter
 Här beskriver du det som du anser har gått mindre bra med ditt projekt och analyserar hur du kan undvika detta i framtida projekt.
 Det var svårare att förstår javascript och kunna programmera specifika saker på webbsidan. Sjävla koden var svårare i vissa delar t.ex layout for vissa bilder och text.

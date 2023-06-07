@@ -12,11 +12,13 @@ Jag hade en början av en väldigt simple webbsida, den var ganska tråkig jag v
 
 ## Positiva erfarenheter
 Det har varit roligt och realtivt lätt att kunna fixa med det visuella. Det kommer hjälpa mig i framtiden med webbsidor mm.
+Tykcte det var ganska tråkigt att göra webbsidor innan men efteråt tycker jag det är ganska roligt när man kan vara kreativ om det.
 
 
 ## Negativa erfarenheter
-Det var svårare att förstår javascript och kunna programmera specifika saker på webbsidan. Sjävla koden var svårare i vissa delar t.ex layout for vissa bilder och text.
+Det var svårare att förstår javascript och kunna programmera specifika saker på webbsidan. Sjävla koden var svårare i vissa delar t.ex layout for vissa bilder och text. Även om det var svårare att förstå gick det bra i slutet men det var en kurva i processen.
 
 ## Sammanfattning
 Slutsatsen med projketet var ett gick bra med vissa svårigheter men dom gick att komma över när jag fick hjälpa av vänner. Lärde mig mer om webbsidor än vad jag visste innan.
+Validerat siden med wave och hade vissa kontrast fel som jag fixade. Bagruden var orginellt för ljus för texten så fixade konstrasten bakom webbsidan.
 
